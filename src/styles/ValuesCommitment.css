@@ -1,0 +1,73 @@
+.values-commitment {
+  padding: 8rem 0;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.commitment-card {
+  text-align: left;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.commitment-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.commitment-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.commitment-icon i {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.commitment-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.commitment-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+@media (max-width: 1200px) {
+  .commitment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-commitment {
+    padding: 6rem 0;
+  }
+
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-card {
+    padding: 2rem;
+  }
+} 

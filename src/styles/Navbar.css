@@ -1,0 +1,181 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Improved button styling */
+.nav-button {
+  padding: 0.8rem 1.2rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-button:hover::after {
+  width: 80%;
+}
+
+/* Special styling for Contact button */
+.contact-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 1.5rem;
+}
+
+.contact-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.contact-button::after {
+  display: none;
+}
+
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown.active .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 2rem;
+}
+
+/* Login button styling */
+.login-button {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-button i {
+  font-size: 0.9rem;
+}
+
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.login-button::after {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-button {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .login-button {
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Add mobile menu handling */
+  }
+}

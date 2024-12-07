@@ -1,0 +1,224 @@
+.our-practices {
+  padding: 8rem 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.practices-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.section-header {
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.section-header .subtitle {
+  display: block;
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.section-header .underline {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+  margin-bottom: 2rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #cccccc;
+  max-width: 800px;
+}
+
+.practices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.practice-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 3rem;
+  transition: all 0.3s ease;
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.practice-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.practice-icon i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.practice-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.practice-content p {
+  color: #cccccc;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #cccccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.services-list li i {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.learn-more {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.learn-more i {
+  transition: transform 0.3s ease;
+}
+
+.learn-more:hover {
+  opacity: 0.8;
+}
+
+.learn-more:hover i {
+  transform: translateX(5px);
+}
+
+.additional-info {
+  margin-top: 5rem;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 3rem;
+}
+
+.info-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.courts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.court-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.court-item i {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.court-item span {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+  .practices-content {
+    padding: 0 3rem;
+  }
+
+  .practices-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .practices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .practices-content {
+    padding: 0 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .practice-card {
+    padding: 2rem;
+  }
+
+  .courts-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

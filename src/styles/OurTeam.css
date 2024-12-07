@@ -1,0 +1,169 @@
+.our-team {
+  padding: 8rem 0;
+  background-color: #000000;
+}
+
+.team-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  text-align: left;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #cccccc;
+  max-width: 800px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.teams-grid {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: left;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.team-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #ffffff, transparent);
+}
+
+.team-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.team-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.team-icon i {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.team-title {
+  flex: 1;
+  text-align: left;
+}
+
+.team-title h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.team-title p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  text-align: left;
+}
+
+.expertise-area {
+  padding-left: calc(60px + 2.5rem);
+  text-align: left;
+  width: 100%;
+}
+
+.expertise-area ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.expertise-area li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #cccccc;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.expertise-area li i {
+  color: #ffffff;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.4rem;
+}
+
+.expertise-area li span {
+  text-align: left;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .expertise-area ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .our-team {
+    padding: 6rem 0;
+  }
+
+  .team-content {
+    padding: 0 2rem;
+  }
+
+  .teams-grid {
+    gap: 4rem;
+  }
+
+  .team-header {
+    gap: 1.5rem;
+  }
+
+  .team-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .team-title h3 {
+    font-size: 1.6rem;
+  }
+
+  .expertise-area {
+    padding-left: calc(50px + 1.5rem);
+  }
+
+  .expertise-area ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

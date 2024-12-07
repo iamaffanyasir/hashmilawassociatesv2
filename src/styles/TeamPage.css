@@ -1,0 +1,18 @@
+.team-page {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 2rem;
+  }
+}

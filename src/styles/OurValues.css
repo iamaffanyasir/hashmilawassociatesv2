@@ -1,0 +1,141 @@
+.our-values {
+  padding: 8rem 0;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.values-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #cccccc;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.value-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 3rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+}
+
+.value-icon i {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.value-content {
+  width: 100%;
+  text-align: left;
+}
+
+.value-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.value-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.value-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.value-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: #cccccc;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.value-points li i {
+  color: #ffffff;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 1200px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-values {
+    padding: 6rem 0;
+  }
+
+  .values-content {
+    padding: 0 2rem;
+  }
+
+  .value-points {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .value-card {
+    padding: 2rem;
+  }
+
+  .value-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .value-content p {
+    font-size: 1rem;
+  }
+} 

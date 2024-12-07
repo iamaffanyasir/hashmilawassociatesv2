@@ -1,0 +1,83 @@
+.team-structure {
+  padding: 8rem 0;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.structure-section {
+  text-align: left;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.structure-section:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.structure-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.structure-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.responsibilities-list li i {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 1200px) {
+  .structure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-structure {
+    padding: 6rem 0;
+  }
+
+  .structure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .structure-section {
+    padding: 2rem;
+  }
+
+  .structure-section h3 {
+    font-size: 1.6rem;
+  }
+} 
