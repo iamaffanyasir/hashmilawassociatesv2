@@ -55,11 +55,13 @@ function DisclaimerModal() {
           <h2 id="disclaimer-title">Legal Disclaimer</h2>
           <div className="header-line"></div>
         </div>
+        
         <div className="modal-text">
           <p className="intro-text">
             Pursuant to the rules of the Bar Council of India, Hashmi Law Associates 
             hereby informs all visitors of this website that:
           </p>
+          
           <ul>
             <li>
               By accessing this website, you acknowledge that you are seeking information 
@@ -77,6 +79,7 @@ function DisclaimerModal() {
               facts or circumstances.
             </li>
           </ul>
+
           <div className="disclaimer-footer">
             <div className="footer-header">Important Notice</div>
             <p>
@@ -86,6 +89,7 @@ function DisclaimerModal() {
             </p>
           </div>
         </div>
+
         <div className="button-container">
           <button 
             onClick={handleAgree}
