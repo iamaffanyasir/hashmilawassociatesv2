@@ -50,7 +50,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          <img src="/logo.png" alt="Hashmi Law Associates" />
+          <img src="/logo.png" alt="Hashmi Law Associates Pvt. Ltd." />
         </Link>
         
         <div className="nav-links">

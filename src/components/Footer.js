@@ -51,12 +51,13 @@ function Footer() {
         <div className="footer-content">
           {/* Company Info */}
           <div className="footer-company">
-            <h3>Hashmi Law Associates</h3>
+            <h3>Hashmi Law Associates Pvt. Ltd.</h3>
             <p>A New Delhi-based fully independent Commercial Litigation Law Firm dedicated to providing comprehensive legal services for domestic and international clients.</p>
             <div className="contact-info">
               <div className="contact-item">
                 <i className="fas fa-phone"></i>
                 <div>
+                  <a href="tel:+911141040055">011-41040055</a>
                   <a href="tel:+918588895750">+91 8588895750</a>
                   <a href="tel:+919891224152">+91 9891224152 (WhatsApp)</a>
                 </div>
@@ -130,7 +131,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="footer-content">
           <div className="bottom-left">
-            <p>&copy; {new Date().getFullYear()} Hashmi Law Associates. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Hashmi Law Associates Pvt. Ltd.. All rights reserved.</p>
             <p>Registered under the Companies Act 2013</p>
           </div>
           <div className="social-links">

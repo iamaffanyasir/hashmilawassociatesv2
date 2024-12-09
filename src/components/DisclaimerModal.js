@@ -58,14 +58,14 @@ function DisclaimerModal() {
         
         <div className="modal-text">
           <p className="intro-text">
-            Pursuant to the rules of the Bar Council of India, Hashmi Law Associates 
+            Pursuant to the rules of the Bar Council of India, Hashmi Law Associates Pvt. Ltd. 
             hereby informs all visitors of this website that:
           </p>
           
           <ul>
             <li>
               By accessing this website, you acknowledge that you are seeking information 
-              about Hashmi Law Associates and its legal services of your own accord, and 
+              about Hashmi Law Associates Pvt. Ltd. and its legal services of your own accord, and 
               for your personal use;
             </li>
             <li>
@@ -83,7 +83,7 @@ function DisclaimerModal() {
           <div className="disclaimer-footer">
             <div className="footer-header">Important Notice</div>
             <p>
-              Hashmi Law Associates expressly disclaims all liability with respect to actions 
+              Hashmi Law Associates Pvt. Ltd. expressly disclaims all liability with respect to actions 
               taken or not taken based on any contents of this website. For specific legal 
               matters, please seek the counsel of a qualified legal professional.
             </p>

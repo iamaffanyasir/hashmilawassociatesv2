@@ -8,6 +8,7 @@ import OurValuesPage from './pages/OurValuesPage';
 import TeamPage from './pages/TeamPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
+import InternshipPage from './pages/InternshipPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/our-values" element={<OurValuesPage />} />
           <Route path="/our-team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/internships" element={<InternshipPage />} />
         </Routes>
         <Footer />
       </div>

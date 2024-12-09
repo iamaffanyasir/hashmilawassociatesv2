@@ -5,7 +5,7 @@ function WhoWeAre() {
     <section className="who-we-are">
       <div className="who-we-are-content">
         <div className="section-header">
-          <span className="subtitle">Welcome to Hashmi Law Associates</span>
+          <span className="subtitle">Welcome to Hashmi Law Associates Pvt. Ltd.</span>
           <h2>Who We Are</h2>
           <div className="underline"></div>
         </div>
