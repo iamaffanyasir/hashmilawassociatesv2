@@ -8,7 +8,7 @@ function Navbar() {
 
   const dropdownMenus = {
     'The Firm': [
-      { name: 'About Us', path: '/about-us' },
+      { name: 'About Us', path: '/about' },
       { name: 'Our Values', path: '/our-values' },
       { name: 'Our Team', path: '/our-team' },
       { name: 'Recognition', path: '/recognition' }

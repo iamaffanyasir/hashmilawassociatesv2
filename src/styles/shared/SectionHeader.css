@@ -1,0 +1,36 @@
+.section-header {
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.section-header .subtitle {
+  display: block;
+  font-size: 1.1rem;
+  color: #3182ce;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  color: #1e293b;
+}
+
+.section-header .underline {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, #3182ce 0%, transparent 100%);
+  margin-bottom: 2rem;
+}
+
+.section-header .section-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #64748b;
+  max-width: 800px;
+} 

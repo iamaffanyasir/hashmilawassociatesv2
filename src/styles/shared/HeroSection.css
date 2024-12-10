@@ -1,0 +1,19 @@
+/* Standardize hero sections */
+.hero-section {
+  position: relative;
+  height: 60vh;
+  margin-top: var(--navbar-height);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+} 

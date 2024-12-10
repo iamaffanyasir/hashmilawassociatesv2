@@ -5,23 +5,25 @@ function OurPractices() {
     {
       title: "Civil Law Practice",
       icon: "fas fa-scale-balanced",
-      description: "Comprehensive legal services including money recovery, property disputes, suits for specific performance, injunctions, and civil litigation across all courts in India.",
+      description: "Comprehensive legal services in civil litigation, property disputes, and commercial matters.",
       services: [
         "Property & Estate Matters",
-        "Recovery Disputes",
+        "Money Recovery Suits",
         "Injunction Matters",
-        "Succession & Probate",
-        "Partition Suits"
+        "Contract Disputes",
+        "Commercial Litigation",
+        "Succession & Probate"
       ]
     },
     {
       title: "Criminal Law Practice",
       icon: "fas fa-gavel",
-      description: "Expert handling of criminal matters including criminal breach of trust, economic offenses, and various criminal proceedings at all levels of courts.",
+      description: "Expert handling of criminal matters from investigation to trial and appeals.",
       services: [
-        "Criminal Litigation",
+        "Criminal Trials & Appeals",
+        "White Collar Crimes",
         "Economic Offenses",
-        "Criminal Appeals",
+        "Criminal Writs",
         "Bail Matters",
         "NDPS Cases"
       ]
@@ -29,25 +31,53 @@ function OurPractices() {
     {
       title: "Corporate Law",
       icon: "fas fa-building",
-      description: "Specialized services for corporate entities including company registration, compliance, mergers & acquisitions, and corporate litigation.",
+      description: "End-to-end corporate legal solutions for businesses and organizations.",
       services: [
-        "Company Registration",
+        "Company Formation",
         "Corporate Compliance",
+        "Mergers & Acquisitions",
         "NCLT Matters",
-        "Business Agreements",
-        "Legal Due Diligence"
+        "Due Diligence",
+        "Business Agreements"
+      ]
+    },
+    {
+      title: "Family Law",
+      icon: "fas fa-users",
+      description: "Sensitive handling of family matters with expertise and compassion.",
+      services: [
+        "Divorce Proceedings",
+        "Child Custody",
+        "Maintenance Cases",
+        "Domestic Violence",
+        "Marriage Registration",
+        "Property Division"
       ]
     },
     {
       title: "NGO & Trust Services",
       icon: "fas fa-hands-holding-heart",
-      description: "Complete consultancy services for NGO registration, funding, legal compliance, and operational management across India.",
+      description: "Specialized services for non-profit organizations and trusts.",
       services: [
         "NGO Registration",
         "FCRA Registration",
         "12A & 80G Registration",
         "Trust Formation",
-        "Compliance Management"
+        "Legal Compliance",
+        "Annual Filings"
+      ]
+    },
+    {
+      title: "Intellectual Property",
+      icon: "fas fa-lightbulb",
+      description: "Protection and enforcement of intellectual property rights.",
+      services: [
+        "Trademark Registration",
+        "Copyright Protection",
+        "Patent Filing",
+        "IP Litigation",
+        "Brand Protection",
+        "IP Due Diligence"
       ]
     }
   ];
@@ -60,58 +90,37 @@ function OurPractices() {
           <h2>Our Practice Areas</h2>
           <div className="underline"></div>
           <p className="section-description">
-            We provide litigation services under diverse areas of law before various courts, tribunals, and forums across India.
+            Comprehensive legal services across diverse practice areas, delivered with expertise and professional excellence.
           </p>
         </div>
 
         <div className="practices-grid">
           {practices.map((practice, index) => (
             <div key={index} className="practice-card">
-              <div className="practice-icon">
-                <i className={practice.icon}></i>
-              </div>
-              <div className="practice-content">
+              <div className="practice-header">
+                <div className="practice-icon">
+                  <i className={practice.icon}></i>
+                </div>
                 <h3>{practice.title}</h3>
-                <p>{practice.description}</p>
-                <ul className="services-list">
-                  {practice.services.map((service, idx) => (
-                    <li key={idx}>
-                      <i className="fas fa-check"></i>
-                      {service}
-                    </li>
-                  ))}
-                </ul>
-                <button className="learn-more">
-                  Learn More
-                  <i className="fas fa-arrow-right"></i>
-                </button>
               </div>
+              
+              <p className="practice-description">{practice.description}</p>
+              
+              <div className="services-list">
+                {practice.services.map((service, idx) => (
+                  <div key={idx} className="service-item">
+                    <i className="fas fa-check"></i>
+                    <span>{service}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <button className="learn-more">
+                Learn More
+                <i className="fas fa-arrow-right"></i>
+              </button>
             </div>
           ))}
-        </div>
-
-        <div className="additional-info">
-          <div className="info-box">
-            <h3>Our Court Presence</h3>
-            <div className="courts-grid">
-              <div className="court-item">
-                <i className="fas fa-landmark"></i>
-                <span>Supreme Court</span>
-              </div>
-              <div className="court-item">
-                <i className="fas fa-building-columns"></i>
-                <span>High Courts</span>
-              </div>
-              <div className="court-item">
-                <i className="fas fa-scale-balanced"></i>
-                <span>District Courts</span>
-              </div>
-              <div className="court-item">
-                <i className="fas fa-gavel"></i>
-                <span>Tribunals</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

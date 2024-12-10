@@ -1,3 +1,4 @@
+import '../styles/shared/SectionHeader.css';
 import '../styles/WhoWeAre.css';
 
 function WhoWeAre() {
@@ -22,8 +23,8 @@ function WhoWeAre() {
             </div>
             
             <div className="features">
-              <div className="feature-item">
-                <div className="feature-icon">
+              <div className="who-we-are-feature-item">
+                <div className="who-we-are-icon">
                   <i className="fas fa-balance-scale"></i>
                 </div>
                 <div className="feature-content">
@@ -32,8 +33,8 @@ function WhoWeAre() {
                 </div>
               </div>
               
-              <div className="feature-item">
-                <div className="feature-icon">
+              <div className="who-we-are-feature-item">
+                <div className="who-we-are-icon">
                   <i className="fas fa-users"></i>
                 </div>
                 <div className="feature-content">
@@ -42,8 +43,8 @@ function WhoWeAre() {
                 </div>
               </div>
               
-              <div className="feature-item">
-                <div className="feature-icon">
+              <div className="who-we-are-feature-item">
+                <div className="who-we-are-icon">
                   <i className="fas fa-handshake"></i>
                 </div>
                 <div className="feature-content">
@@ -81,36 +82,6 @@ function WhoWeAre() {
                 <li>
                   <i className="fas fa-check-circle"></i>
                   <span>Documentation Services</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="expertise-box">
-              <h3>Courts We Serve</h3>
-              <ul>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>Supreme Court of India</span>
-                </li>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>Delhi High Court</span>
-                </li>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>National Company Law Tribunal</span>
-                </li>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>Consumer Forums</span>
-                </li>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>Debt Recovery Tribunal</span>
-                </li>
-                <li>
-                  <i className="fas fa-gavel"></i>
-                  <span>Arbitration Tribunals</span>
                 </li>
               </ul>
             </div>

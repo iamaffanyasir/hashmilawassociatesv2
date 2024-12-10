@@ -1,9 +1,9 @@
-.values-page {
+.teams-page {
   padding-top: 80px; /* For fixed navbar */
 }
 
 /* Hero Section */
-.values-hero {
+.teams-hero {
   background-image: url('../images/hero1.jpg');
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   color: #ffffff;
 }
 
-.values-hero::before {
+.teams-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-.values-hero-content {
+.teams-hero-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -37,7 +37,7 @@
   z-index: 2;
 }
 
-.values-hero h1 {
+.teams-hero h1 {
   font-size: 3.5rem;
   color: #ffffff;
   margin-bottom: 1.5rem;
@@ -45,7 +45,7 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.values-hero p {
+.teams-hero p {
   font-size: 1.4rem;
   color: #e2e8f0;
   line-height: 1.6;
@@ -60,7 +60,7 @@
 }
 
 /* Intro Section */
-.values-intro {
+.teams-intro {
   padding: 8rem 0;
   background-color: #ffffff;
 }
@@ -102,15 +102,10 @@
   margin-bottom: 1.5rem;
 }
 
-/* Core Values Section */
-.core-values {
+/* Team Structure Section */
+.team-structure {
   padding: 8rem 0;
   background-color: #f8fafc;
-}
-
-.core-values h2,
-.our-expertise h2 {
-  text-align: left;
 }
 
 .section-intro {
@@ -122,27 +117,28 @@
   color: #64748b;
 }
 
-.values-grid {
+.teams-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
 
-.value-card {
+.team-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 2.5rem;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
-.value-card:hover {
+.team-card:hover {
   transform: translateY(-5px);
   border-color: #3182ce;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.value-icon {
+.team-icon {
   width: 60px;
   height: 60px;
   background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
@@ -153,59 +149,78 @@
   margin-bottom: 2rem;
 }
 
-.value-icon i {
+.team-icon i {
   font-size: 1.8rem;
   color: #ffffff;
 }
 
-.value-content h3 {
+.team-content {
+  text-align: left;
+}
+
+.team-content h3 {
   font-size: 1.4rem;
   color: #1e293b;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
-.value-content p {
+.team-content p {
   color: #64748b;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
-.value-points {
+.expertise-list {
+  text-align: left;
+}
+
+.expertise-list h4 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.expertise-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  text-align: left;
 }
 
-.value-points li {
+.expertise-list li {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.8rem;
+  font-size: 0.95rem;
   color: #475569;
-  font-size: 1rem;
-  line-height: 1.5;
+  text-align: left;
 }
 
-.value-points li i {
+.expertise-list li i {
   color: #3182ce;
   margin-top: 0.25rem;
 }
 
-/* Expertise Section */
-.our-expertise {
+/* Specialized Teams Section */
+.specialized-teams {
   padding: 8rem 0;
   background-color: #ffffff;
 }
 
-.expertise-grid {
+.specialized-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   margin-top: 3rem;
 }
 
-.expertise-card {
+.specialized-card {
   text-align: left;
   padding: 2.5rem;
   background: #ffffff;
@@ -214,13 +229,13 @@
   transition: all 0.3s ease;
 }
 
-.expertise-card:hover {
+.specialized-card:hover {
   transform: translateY(-5px);
   border-color: #3182ce;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.expertise-icon {
+.specialized-icon {
   width: 70px;
   height: 70px;
   background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
@@ -231,24 +246,24 @@
   margin: 0 0 1.5rem;
 }
 
-.expertise-icon i {
+.specialized-icon i {
   font-size: 2rem;
   color: #ffffff;
 }
 
-.expertise-card h3 {
+.specialized-card h3 {
   font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1rem;
 }
 
-.expertise-card p {
+.specialized-card p {
   color: #64748b;
   line-height: 1.6;
 }
 
 /* CTA Section */
-.values-cta {
+.contact-cta {
   padding: 6rem 0;
   background-color: #f8fafc;
   text-align: center;
@@ -306,17 +321,21 @@
     padding: 0 3rem;
   }
   
-  .values-grid {
+  .teams-grid {
     gap: 2rem;
   }
   
-  .expertise-grid {
+  .specialized-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 992px) {
-  .values-grid {
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .expertise-list ul {
     grid-template-columns: 1fr;
   }
 }
@@ -326,11 +345,11 @@
     padding: 0 1.5rem;
   }
 
-  .values-hero h1 {
+  .teams-hero h1 {
     font-size: 2.5rem;
   }
 
-  .values-hero p {
+  .teams-hero p {
     font-size: 1.2rem;
   }
 
@@ -338,16 +357,39 @@
     font-size: 1.2rem;
   }
 
-  .expertise-grid {
+  .specialized-grid {
     grid-template-columns: 1fr;
   }
 
-  .value-card,
-  .expertise-card {
+  .team-card,
+  .specialized-card {
     padding: 2rem;
   }
 
   .cta-content h2 {
     font-size: 2rem;
   }
-} 
+}
+
+/* Update section headers to be left-aligned */
+.team-structure h2,
+.specialized-teams h2 {
+  text-align: left;
+}
+
+/* Ensure section headers and their underlines are consistently left-aligned */
+.team-structure .underline,
+.specialized-teams .underline {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Keep section intro text left-aligned */
+.section-intro {
+  max-width: 800px;
+  margin: 0 0 4rem; /* Remove auto margins */
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #64748b;
+}

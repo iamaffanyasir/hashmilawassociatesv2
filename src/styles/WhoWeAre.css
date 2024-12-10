@@ -1,7 +1,7 @@
 .who-we-are {
   padding: 8rem 0;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #2d3748;
 }
 
 .who-we-are-content {
@@ -19,10 +19,11 @@
 .section-header .subtitle {
   display: block;
   font-size: 1.1rem;
-  color: #cccccc;
+  color: #3182ce;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .section-header h2 {
@@ -30,13 +31,13 @@
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: -0.5px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .underline {
   width: 120px;
   height: 3px;
-  background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+  background: linear-gradient(to right, #3182ce 0%, transparent 100%);
 }
 
 .content-grid {
@@ -51,18 +52,21 @@
 }
 
 .highlight {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.8;
-  color: #e0e0e0;
+  color: #1f2937;
   margin-bottom: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: left;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 4px solid #3182ce;
 }
 
 .sub-highlight {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #cccccc;
+  color: #374151;
   text-align: left;
 }
 
@@ -72,36 +76,39 @@
   gap: 2.5rem;
 }
 
-.feature-item {
-  padding: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.03);
+.who-we-are-feature-item {
+  padding: 3rem;
+  background-color: #ffffff;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.feature-item:hover {
+.who-we-are-feature-item:hover {
   transform: translateY(-5px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: #3182ce;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.1);
+.who-we-are-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
 }
 
-.feature-icon i {
+.who-we-are-icon i {
   font-size: 1.8rem;
   color: #ffffff;
 }
@@ -109,11 +116,11 @@
 .feature-content h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #1e293b;
 }
 
 .feature-content p {
-  color: #cccccc;
+  color: #64748b;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -121,31 +128,34 @@
 .side-content {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
   position: sticky;
   top: 2rem;
 }
 
 .expertise-box {
-  padding: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.03);
+  height: 100%;
+  padding: 3rem;
+  background-color: #ffffff;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .expertise-box:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
+  background-color: #ffffff;
+  border-color: #3182ce;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .expertise-box h3 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: #1e293b;
   position: relative;
   padding-bottom: 1rem;
+  text-align: left;
 }
 
 .expertise-box h3::after {
@@ -155,7 +165,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background: linear-gradient(to right, #ffffff, transparent);
+  background: linear-gradient(to right, #3182ce, transparent);
 }
 
 .expertise-box ul {
@@ -168,23 +178,32 @@
 }
 
 .expertise-box li {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #cccccc;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  text-align: left;
 }
 
 .expertise-box li:hover {
-  color: #ffffff;
-  transform: translateX(5px);
+  background-color: #f7fafc;
+  color: #3182ce;
+  transform: translateX(10px);
 }
 
 .expertise-box li i {
-  color: #ffffff;
+  color: #3182ce;
   font-size: 1rem;
   opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.expertise-box li span {
+  color: #64748b;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 @media (max-width: 1400px) {
@@ -204,9 +223,6 @@
   }
 
   .side-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
     position: static;
   }
 }
@@ -225,7 +241,8 @@
   }
 
   .highlight {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
   }
 
   .features {
@@ -234,5 +251,13 @@
 
   .side-content {
     grid-template-columns: 1fr;
+  }
+
+  .who-we-are-feature-item {
+    padding: 2rem;
+  }
+
+  .expertise-box {
+    padding: 2rem;
   }
 }

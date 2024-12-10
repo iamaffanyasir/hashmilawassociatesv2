@@ -1,7 +1,7 @@
 .footer {
   background-color: #0a0a0a;
   color: #ffffff;
- margin-top: 4rem;
+  margin-top: 0;
 }
 
 .footer-content {
@@ -91,6 +91,7 @@
 .footer-section {
   padding-top: 0.5rem;
   min-width: 220px;
+  text-align: left;
 }
 
 .footer-section h4 {
@@ -100,6 +101,7 @@
   position: relative;
   padding-bottom: 1rem;
   letter-spacing: 0.5px;
+  text-align: left;
 }
 
 .footer-section h4::after {

@@ -3,12 +3,12 @@ import './App.css';
 import DisclaimerModal from './components/DisclaimerModal';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
-import OurValuesPage from './pages/OurValuesPage';
-import TeamPage from './pages/TeamPage';
-import ContactPage from './pages/ContactPage';
+import AboutUs from './pages/AboutUs';
+import OurValues from './pages/OurValues';
+import OurTeams from './pages/OurTeams';
+import ContactUs from './pages/ContactUs';
+import Internship from './pages/Internship';
 import Footer from './components/Footer';
-import InternshipPage from './pages/InternshipPage';
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<About />} />
-          <Route path="/our-values" element={<OurValuesPage />} />
-          <Route path="/our-team" element={<TeamPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/internships" element={<InternshipPage />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/our-values" element={<OurValues />} />
+          <Route path="/our-team" element={<OurTeams />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/internships" element={<Internship />} />
         </Routes>
         <Footer />
       </div>

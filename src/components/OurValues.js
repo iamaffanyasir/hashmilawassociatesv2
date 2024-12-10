@@ -5,45 +5,45 @@ function OurValues() {
     {
       icon: "fas fa-balance-scale",
       title: "Professional Excellence",
-      description: "We maintain the highest standards of professional ethics and legal expertise in all our services. Our commitment to excellence drives every aspect of our practice.",
+      description: "We maintain the highest standards of professional ethics and legal expertise in all our services.",
       points: [
-        "Highest ethical standards",
-        "Expert legal counsel",
-        "Professional development",
-        "Quality service delivery"
+        "Commitment to quality service",
+        "Continuous professional development",
+        "Result-oriented approach",
+        "Industry best practices"
       ]
     },
     {
       icon: "fas fa-handshake",
-      title: "Client Focus",
-      description: "Our priority is understanding and meeting our clients' needs with practical legal solutions that address their specific challenges.",
+      title: "Client-Centric Focus",
+      description: "Our clients' success is our priority. We provide personalized attention and practical legal solutions.",
       points: [
         "Personalized attention",
-        "Timely responses",
-        "Clear communication",
-        "Result-oriented approach"
+        "Transparent communication",
+        "Timely responsiveness",
+        "Cost-effective solutions"
       ]
     },
     {
-      icon: "fas fa-gavel",
-      title: "Legal Integrity",
-      description: "We uphold the highest standards of legal practice with unwavering integrity and transparency in all our client interactions.",
+      icon: "fas fa-shield-halved",
+      title: "Integrity & Trust",
+      description: "We uphold the highest standards of integrity in our practice and build lasting relationships based on trust.",
       points: [
-        "Transparent dealings",
         "Ethical practices",
-        "Honest communication",
-        "Trust building"
+        "Transparent dealings",
+        "Confidentiality",
+        "Trust-based relationships"
       ]
     },
     {
-      icon: "fas fa-users",
-      title: "Team Collaboration",
-      description: "Our multi-tiered team works together seamlessly to provide comprehensive legal solutions across all practice areas.",
+      icon: "fas fa-scale-unbalanced-flip",
+      title: "Legal Innovation",
+      description: "We combine traditional legal wisdom with innovative approaches to address modern legal challenges.",
       points: [
-        "Integrated approach",
-        "Knowledge sharing",
-        "Cross-functional teams",
-        "Collaborative solutions"
+        "Modern legal solutions",
+        "Technology integration",
+        "Creative problem-solving",
+        "Adaptive strategies"
       ]
     }
   ];
@@ -63,12 +63,17 @@ function OurValues() {
         <div className="values-grid">
           {values.map((value, index) => (
             <div key={index} className="value-card">
-              <div className="value-icon">
-                <i className={value.icon}></i>
+              <div className="value-icon-wrapper">
+                <div className="value-icon">
+                  <i className={value.icon}></i>
+                </div>
+                <div className="icon-ring"></div>
               </div>
+              
               <div className="value-content">
                 <h3>{value.title}</h3>
-                <p>{value.description}</p>
+                <p className="value-description">{value.description}</p>
+                
                 <ul className="value-points">
                   {value.points.map((point, idx) => (
                     <li key={idx}>
@@ -80,6 +85,17 @@ function OurValues() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="values-footer">
+          <div className="commitment-statement">
+            <h4>Our Commitment to Excellence</h4>
+            <p>
+              At Hashmi Law Associates, these values aren't just words - they're the principles that guide every aspect 
+              of our practice. We are committed to maintaining the highest standards of legal service while fostering 
+              trust and delivering results for our clients.
+            </p>
+          </div>
         </div>
       </div>
     </section>

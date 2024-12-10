@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --primary-color: #3182ce;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+  --bg-dark: #000000;
+  --bg-light: #f7fafc;
+  --border-color: #e2e8f0;
+
+  /* Spacing */
+  --section-padding: 8rem;
+  --section-padding-sm: 6rem;
+  --content-padding: 4rem;
+  --grid-gap: 2rem;
+
+  /* Sizes */
+  --navbar-height: 80px;
+  --container-width: 1400px;
+  --border-radius: 12px;
+
+  /* Transitions */
+  --transition: all 0.3s ease;
+
+  /* Add shared variables */
+  --hero-height: 60vh;
+  
+  @media (max-width: 768px) {
+    --content-padding: 2rem;
+    --section-padding: 6rem;
+  }
+} 

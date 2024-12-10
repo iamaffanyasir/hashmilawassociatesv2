@@ -1,0 +1,30 @@
+/* Use these breakpoints consistently */
+@media (max-width: 1400px) {
+  .content-container {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid-3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablet landscape */
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 2rem;
+  }
+  
+  .section-padding {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile */
+}
