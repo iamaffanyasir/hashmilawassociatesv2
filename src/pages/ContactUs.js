@@ -19,9 +19,12 @@ function ContactUs() {
       details: [
         "+91 8588895750",
         "+91 9891224152 (WhatsApp)",
-        "info@adalegal.co.in",
-        "hashmi.adil@adalegal.co.in",
-        "adv.adil.hashmi@gmail.com"
+        "adv.adil.hashmi@gmail.com",
+        "info@hlapl.co.in",
+        "hashmi.adil@hlapl.co.in",
+        "Admin@hlapl.co.in",
+        "hr@hlapl.co.in",
+        "Account@hlapl.co.in"
       ],
       icon: "fas fa-phone"
     },
