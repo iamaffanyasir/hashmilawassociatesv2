@@ -9,6 +9,10 @@ import OurTeams from './pages/OurTeams';
 import ContactUs from './pages/ContactUs';
 import Internship from './pages/Internship';
 import Footer from './components/Footer';
+import Retainership from './pages/Retainership';
+import NewsUpdates from './pages/NewsUpdates';
+import TrafficChallans from './pages/TrafficChallans';
+import Articles from './pages/Articles';
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
           <Route path="/our-team" element={<OurTeams />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/internships" element={<Internship />} />
+          <Route path="/retainership" element={<Retainership />} />
+          <Route path="/news" element={<NewsUpdates />} />
+          <Route path="/traffic-challans" element={<TrafficChallans />} />
+          <Route path="/articles" element={<Articles />} />
         </Routes>
         <Footer />
       </div>

@@ -11,6 +11,7 @@ function Navbar() {
       { name: 'About Us', path: '/about' },
       { name: 'Our Values', path: '/our-values' },
       { name: 'Our Team', path: '/our-team' },
+      { name: 'Retainership', path: '/retainership' },
       { name: 'Recognition', path: '/recognition' }
     ],
     'Media & Publications': [
@@ -24,7 +25,8 @@ function Navbar() {
       { name: 'Criminal Law Practice', path: '/criminal-law' },
       { name: 'Corporate Law Practice', path: '/corporate-law' },
       { name: 'Family Law', path: '/family-law' },
-      { name: 'NGO & Trust Services', path: '/ngo-services' }
+      { name: 'NGO & Trust Services', path: '/ngo-services' },
+      { name: 'Traffic Challans', path: '/traffic-challans' }
     ],
     'Careers': [
       { name: 'Current Openings', path: '/careers' },

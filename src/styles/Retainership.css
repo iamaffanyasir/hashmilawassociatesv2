@@ -1,0 +1,293 @@
+.retainership-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.retainership-hero {
+  background-image: url('../images/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.retainership-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+.retainership-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.retainership-hero h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.retainership-hero p {
+  font-size: 1.4rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Content Container */
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+/* Shared Section Styles */
+.retainership-definition,
+.legal-precedents,
+.our-expertise,
+.benefits-section,
+.clients-section,
+.package-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.legal-precedents,
+.benefits-section,
+.package-section {
+  background-color: #f8fafc;
+}
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.underline {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, #3182ce 0%, transparent 100%);
+  margin-bottom: 2rem;
+  margin-left: 0;
+}
+
+/* Definition Section */
+.section-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+/* Legal Precedents */
+.case-study {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.case-study h3 {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Services Categories */
+.services-category {
+  margin-bottom: 3rem;
+}
+
+.services-category h3 {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-category li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.services-category li::before {
+  content: '•';
+  color: #3182ce;
+  font-weight: bold;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  border-color: #3182ce;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Clients Grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.client-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  color: #1e293b;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.client-item:hover {
+  transform: translateY(-3px);
+  border-color: #3182ce;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Package Section */
+.package-details {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.package-details h3 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.package-details p {
+  color: #3182ce;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.package-features h4 {
+  color: #1e293b;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.package-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.package-features li::before {
+  content: '✓';
+  color: #3182ce;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-container {
+    padding: 0 3rem;
+  }
+  
+  .benefits-grid,
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 1.5rem;
+  }
+
+  .retainership-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-content h2 {
+    font-size: 2rem;
+  }
+
+  .benefits-grid,
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-details {
+    padding: 2rem;
+  }
+} 

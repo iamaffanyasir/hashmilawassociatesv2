@@ -134,6 +134,7 @@
   border-radius: 12px;
   padding: 2.5rem;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .value-card:hover {
@@ -158,19 +159,25 @@
   color: #ffffff;
 }
 
+.value-content {
+  text-align: left;
+}
+
 .value-content h3 {
-  font-size: 1.4rem;
+  text-align: left;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 1rem;
 }
 
 .value-content p {
+  text-align: left;
   color: #64748b;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
 }
 
 .value-points {
+  text-align: left;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -179,6 +186,7 @@
 }
 
 .value-points li {
+  text-align: left;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -351,3 +359,10 @@
     font-size: 2rem;
   }
 } 
+
+/* Ensure section headers and their underlines are consistently left-aligned */
+.core-values .underline,
+.our-expertise .underline {
+  margin-left: 0;
+  margin-right: auto;
+}
