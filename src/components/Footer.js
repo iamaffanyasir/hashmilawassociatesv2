@@ -66,7 +66,11 @@ function Footer() {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <a href="mailto:info@adalegal.co.in">info@adalegal.co.in</a>
-                  <a href="mailto:hashmi.adil@adalegal.co.in">hashmi.adil@adalegal.co.in</a>
+                  <a href="mailto:hashmi.adil@hlapl.co.in">hashmi.adil@hlapl.co.in</a>
+                  <a href="mailto:Admin@hlapl.co.in">Admin@hlapl.co.in</a>
+                  <a href="mailto:hr@hlapl.co.in">hr@hlapl.co.in</a>
+                  <a href="mailto:Account@hlapl.co.in">Account@hlapl.co.in</a>
+                  
                 </div>
               </div>
               <div className="contact-item">
