@@ -1,10 +1,12 @@
-import { useState, useCallback } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState, useCallback, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const dropdownMenus = {
     'The Firm': [
@@ -35,6 +37,15 @@ function Navbar() {
     ]
   };
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : 'unset';
+  };
+
   const handleMouseEnter = useCallback((menu) => {
     setActiveDropdown(menu);
   }, []);
@@ -55,28 +66,38 @@ function Navbar() {
           <img src="/logo.png" alt="Hashmi Law Associates Pvt. Ltd." />
         </Link>
         
-        <div className="nav-links">
+        <button 
+          className={`hamburger-menu ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <Link to="/" className="nav-button">Home</Link>
           
           {Object.entries(dropdownMenus).map(([menu, items]) => (
             <div 
               key={menu}
               className={`dropdown ${activeDropdown === menu ? 'active' : ''}`}
-              onMouseEnter={() => handleMouseEnter(menu)}
-              onMouseLeave={handleMouseLeave}
+              onClick={() => isMobileMenuOpen && setActiveDropdown(activeDropdown === menu ? null : menu)}
             >
               <div className="nav-button">
                 {menu}
                 <span className="dropdown-arrow">▼</span>
               </div>
-              <div className="dropdown-content">
+              <div className={`dropdown-content ${isMobileMenuOpen ? 'mobile' : ''}`}>
                 {items.map((item) => (
-                  <a 
+                  <Link 
                     key={item.name}
-                    onClick={() => handleMenuClick(item.path)}
+                    to={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

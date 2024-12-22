@@ -229,7 +229,7 @@
 
 @media (max-width: 768px) {
   .who-we-are {
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
 
   .who-we-are-content {
@@ -237,27 +237,56 @@
   }
 
   .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
   }
 
   .highlight {
-    font-size: 1.3rem;
-    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .sub-highlight {
+    font-size: 1rem;
   }
 
   .features {
     grid-template-columns: 1fr;
-  }
-
-  .side-content {
-    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .who-we-are-feature-item {
-    padding: 2rem;
+    padding: 1.25rem;
+  }
+
+  .who-we-are-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .feature-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-content p {
+    font-size: 0.95rem;
   }
 
   .expertise-box {
-    padding: 2rem;
+    padding: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .expertise-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .expertise-box ul li {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
   }
 }

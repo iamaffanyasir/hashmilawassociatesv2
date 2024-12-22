@@ -244,28 +244,68 @@
 
 @media (max-width: 768px) {
   .our-practices {
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
 
   .practices-content {
     padding: 0 1.5rem;
   }
 
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
   .practices-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .practice-card {
-    padding: 2rem;
+    padding: 1.25rem;
+  }
+
+  .practice-header {
+    margin-bottom: 1rem;
+  }
+
+  .practice-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .practice-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .practice-description {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
   }
 
   .services-list {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
-  .section-header h2 {
-    font-size: 2.5rem;
+  .service-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .learn-more {
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    width: 100%;
+    justify-content: center;
   }
 }
 
