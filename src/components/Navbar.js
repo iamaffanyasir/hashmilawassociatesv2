@@ -38,7 +38,14 @@ function Navbar() {
   };
 
   useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
+  useEffect(() => {
     setIsMobileMenuOpen(false);
+    document.body.style.overflow = 'unset';
   }, [location.pathname]);
 
   const toggleMobileMenu = () => {
@@ -56,7 +63,8 @@ function Navbar() {
 
   const handleMenuClick = (path) => {
     navigate(path);
-    setActiveDropdown(null);
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = 'unset';
   };
 
   return (

@@ -1,7 +1,16 @@
 import '../styles/AboutUs.css';
 import hero1 from '../images/hero1.jpg';
+import { useEffect } from 'react';
 
 function AboutUs() {
+  useEffect(() => {
+    document.body.style.overflow = 'unset';
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   const milestones = [
     {
       year: "15+",

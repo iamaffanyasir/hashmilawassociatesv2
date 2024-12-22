@@ -338,3 +338,231 @@
 .intro-text {
   text-align: left;
 }
+
+/* Update mobile styles */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 6rem 0 4rem;
+    text-align: left;
+  }
+
+  .about-hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Main content section */
+  .about-content {
+    padding: 3rem 0;
+  }
+
+  .content-container {
+    padding: 0 1.5rem;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .highlight {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #3182ce;
+  }
+
+  .sub-highlight {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Milestones section */
+  .milestones-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .milestone-card {
+    padding: 1.5rem;
+  }
+
+  .milestone-year {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .milestone-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .milestone-description {
+    font-size: 0.95rem;
+  }
+
+  /* Expertise section */
+  .expertise-section {
+    padding: 3rem 0;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .expertise-card {
+    padding: 1.5rem;
+  }
+
+  .expertise-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .expertise-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .expertise-card p {
+    font-size: 0.95rem;
+  }
+
+  /* Team structure section */
+  .team-structure {
+    padding: 3rem 0;
+  }
+
+  .tier-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tier-card {
+    padding: 1.5rem;
+  }
+
+  .tier-header {
+    margin-bottom: 1rem;
+  }
+
+  .tier-header i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tier-header h4 {
+    font-size: 1.2rem;
+  }
+
+  .tier-features {
+    font-size: 0.95rem;
+  }
+
+  .tier-features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  /* Section headers */
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Add smooth scroll behavior */
+  .about-page {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix scrolling issues */
+  .about-page {
+    height: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links {
+    max-height: calc(100vh - 80px); /* Subtract navbar height */
+    overflow-y: auto;
+  }
+
+  /* Ensure content sections don't overflow */
+  .about-content,
+  .expertise-section,
+  .team-structure {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Adjust container padding */
+  .content-container {
+    padding: 0 1.5rem;
+    overflow: visible;
+  }
+
+  /* Ensure cards don't cause horizontal scroll */
+  .milestone-card,
+  .expertise-card,
+  .tier-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /* Adjust grids to prevent overflow */
+  .intro-grid,
+  .milestones-grid,
+  .expertise-grid,
+  .tier-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Add proper spacing between sections */
+  .about-hero {
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    margin-bottom: 2rem;
+  }
+
+  .expertise-section {
+    margin-bottom: 2rem;
+  }
+
+  /* Ensure smooth transitions */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
