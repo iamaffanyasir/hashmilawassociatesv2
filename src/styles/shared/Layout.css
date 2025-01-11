@@ -1,46 +1,39 @@
 /* Common layout styles */
-.page-container {
-  min-height: 100vh;
-  padding-top: 80px; /* For fixed navbar */
-}
-
-.content-container {
-  max-width: 1400px;
+.container {
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: var(--content-padding);
+  padding: 0 var(--spacing-lg);
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-  .content-container {
-    padding: 0 2rem;
-  }
+.container-fluid {
+  max-width: none;
 }
 
-/* Add these global layout classes */
-.section-padding {
-  padding: 8rem 0;
+.section {
+  padding: var(--section-padding) 0;
 }
 
-.section-padding-sm {
-  padding: 6rem 0;
-}
-
-.grid-container {
+.grid {
   display: grid;
-  gap: var(--grid-gap, 2rem);
+  gap: var(--spacing-md);
 }
 
-.grid-2-col {
+.grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-3-col {
+.grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 768px) {
-  .grid-2-col,
-  .grid-3-col {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .grid-2,
+  .grid-3 {
     grid-template-columns: 1fr;
   }
 }

@@ -87,31 +87,20 @@
   position: relative;
 }
 
-.dropdown-arrow {
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-.dropdown.active .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
 .dropdown-content {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 220px;
+  min-width: 200px;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  padding: 1rem 0;
-  margin-top: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .dropdown.active .dropdown-content {
@@ -122,18 +111,45 @@
 
 .dropdown-content a {
   display: block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   color: #475569;
   text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .dropdown-content a:hover {
   background-color: #f8fafc;
   color: #3182ce;
-  padding-left: 2rem;
+}
+
+/* Update dropdown arrow styles */
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Ensure dropdowns work properly on desktop */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-content {
+    margin-top: 0.5rem;
+  }
 }
 
 /* Login button styling */

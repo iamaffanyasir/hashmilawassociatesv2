@@ -1,10 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -38,37 +39,41 @@ function Navbar() {
   };
 
   useEffect(() => {
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
+    function handleClickOutside(event) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   useEffect(() => {
+    setActiveDropdown(null);
     setIsMobileMenuOpen(false);
-    document.body.style.overflow = 'unset';
   }, [location.pathname]);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-    document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : 'unset';
+  const handleDropdownClick = (menu) => {
+    if (window.innerWidth <= 768) {
+      setActiveDropdown(activeDropdown === menu ? null : menu);
+    }
   };
 
-  const handleMouseEnter = useCallback((menu) => {
-    setActiveDropdown(menu);
-  }, []);
+  const handleDropdownHover = (menu) => {
+    if (window.innerWidth > 768) {
+      setActiveDropdown(menu);
+    }
+  };
 
-  const handleMouseLeave = useCallback(() => {
-    setActiveDropdown(null);
-  }, []);
-
-  const handleMenuClick = (path) => {
-    navigate(path);
-    setIsMobileMenuOpen(false);
-    document.body.style.overflow = 'unset';
+  const handleDropdownLeave = () => {
+    if (window.innerWidth > 768) {
+      setActiveDropdown(null);
+    }
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navRef}>
       <div className="navbar-container">
         <Link to="/" className="logo">
           <img src="/logo.png" alt="Hashmi Law Associates Pvt. Ltd." />
@@ -76,7 +81,7 @@ function Navbar() {
         
         <button 
           className={`hamburger-menu ${isMobileMenuOpen ? 'active' : ''}`}
-          onClick={toggleMobileMenu}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
           <span></span>
@@ -91,7 +96,9 @@ function Navbar() {
             <div 
               key={menu}
               className={`dropdown ${activeDropdown === menu ? 'active' : ''}`}
-              onClick={() => isMobileMenuOpen && setActiveDropdown(activeDropdown === menu ? null : menu)}
+              onClick={() => handleDropdownClick(menu)}
+              onMouseEnter={() => handleDropdownHover(menu)}
+              onMouseLeave={handleDropdownLeave}
             >
               <div className="nav-button">
                 {menu}
@@ -102,7 +109,10 @@ function Navbar() {
                   <Link 
                     key={item.name}
                     to={item.path}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setActiveDropdown(null);
+                    }}
                   >
                     {item.name}
                   </Link>

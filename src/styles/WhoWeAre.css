@@ -10,13 +10,14 @@
   padding: 0 4rem;
 }
 
-.section-header {
+.who-we-are .section-header {
   text-align: left;
   margin-bottom: 5rem;
   position: relative;
 }
 
-.section-header .subtitle {
+.who-we-are .section-header .subtitle {
+  text-align: left;
   display: block;
   font-size: 1.1rem;
   color: #3182ce;
@@ -26,7 +27,8 @@
   font-weight: 500;
 }
 
-.section-header h2 {
+.who-we-are .section-header h2 {
+  text-align: left;
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -34,7 +36,9 @@
   color: #000000;
 }
 
-.underline {
+.who-we-are .section-header .underline {
+  margin-left: 0;
+  margin-right: auto;
   width: 120px;
   height: 3px;
   background: linear-gradient(to right, #3182ce 0%, transparent 100%);
